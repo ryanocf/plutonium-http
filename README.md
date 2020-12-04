@@ -22,12 +22,12 @@ ___
 Every function returns the same Vector scheme:
 
 ```c++
-0: version
-1: error
-2: status
-3: reason
-4: body
-5: headers
+0: version // String
+1: error // String
+2: status // Int
+3: reason // String
+4: body // String
+5: headers // Map
 ```
 
 ```c++
