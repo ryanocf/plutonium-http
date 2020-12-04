@@ -112,7 +112,7 @@ std::array<std::string, 13> error_list = {
 ___
 
 Any questions or problems?<br/>
-Feel free to open an [issue](https://github.com/ryanocf/plutonium-http/issues/new) or visit this project on [Plutonium](https://forum.plutonium.pw/).
+Feel free to open an [issue](https://github.com/ryanocf/plutonium-http/issues/new) or visit this project on [Plutonium](https://forum.plutonium.pw/topic/6755/release-plutonium-http).
 
 ## Credits
 
