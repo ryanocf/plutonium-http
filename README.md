@@ -54,7 +54,7 @@ http_get("http://example.com", "/route", ["header": "value"]);
  * return: Vector
  */
 http_post("http://example.com", "/route", "body" ["header": "value"], "text/plain");
-http_post("http://example.com", "/route", "param=body&format=string" ["header": "value"], "application/x-www-form-urlencoded");
+http_post("http://example.com", "/route", "param=body&format=string", ["header": "value"], "application/x-www-form-urlencoded");
 ```
 
 ```c++
@@ -69,7 +69,7 @@ http_post("http://example.com", "/route", "param=body&format=string" ["header": 
  * return: Vector
  */
 http_put("http://example.com", "/route", "body" ["header": "value"], "text/plain");
-http_put("http://example.com", "/route", "param=body&format=string" ["header": "value"], "application/x-www-form-urlencoded");
+http_put("http://example.com", "/route", "param=body&format=string", ["header": "value"], "application/x-www-form-urlencoded");
 ```
 
 ```c++
@@ -84,7 +84,7 @@ http_put("http://example.com", "/route", "param=body&format=string" ["header": "
  * return: Vector
  */
 http_delete("http://example.com", "/route", "body" ["header": "value"], "text/plain");
-http_delete("http://example.com", "/route", "param=body&format=string" ["header": "value"], "application/x-www-form-urlencoded");
+http_delete("http://example.com", "/route", "param=body&format=string", ["header": "value"], "application/x-www-form-urlencoded");
 ```
 
 ___
