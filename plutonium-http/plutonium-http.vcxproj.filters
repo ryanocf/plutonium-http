@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="include.hpp" />
+    <ClInclude Include="core\client.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\conversion.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\cpp-httplib\httplib.h">
+      <Filter>submodules\cpp-httplib</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\chaiscript.hpp">
+      <Filter>submodules\ChaiScript</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\chaiscript_basic.hpp">
+      <Filter>submodules\ChaiScript</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\chaiscript_defines.hpp">
+      <Filter>submodules\ChaiScript</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\chaiscript_stdlib.hpp">
+      <Filter>submodules\ChaiScript</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\chaiscript_threading.hpp">
+      <Filter>submodules\ChaiScript</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\any.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\bad_boxed_cast.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\bind_first.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\bootstrap.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\bootstrap_stl.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\boxed_cast.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\boxed_cast_helper.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\boxed_number.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\boxed_value.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\callable_traits.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\dispatchkit.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\dynamic_object.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\dynamic_object_detail.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\exception_specification.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\function_call.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\function_call_detail.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\handle_return.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\operators.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\proxy_constructors.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\proxy_functions.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\proxy_functions_detail.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\register_function.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\short_alloc.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\type_conversions.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\type_info.hpp">
+      <Filter>submodules\ChaiScript\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_algebraic.hpp">
+      <Filter>submodules\ChaiScript\language</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_common.hpp">
+      <Filter>submodules\ChaiScript\language</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_engine.hpp">
+      <Filter>submodules\ChaiScript\language</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_eval.hpp">
+      <Filter>submodules\ChaiScript\language</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_optimizer.hpp">
+      <Filter>submodules\ChaiScript\language</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_parser.hpp">
+      <Filter>submodules\ChaiScript\language</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_posix.hpp">
+      <Filter>submodules\ChaiScript\language</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_prelude.hpp">
+      <Filter>submodules\ChaiScript\language</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_prelude_docs.hpp">
+      <Filter>submodules\ChaiScript\language</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_tracer.hpp">
+      <Filter>submodules\ChaiScript\language</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_unknown.hpp">
+      <Filter>submodules\ChaiScript\language</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_windows.hpp">
+      <Filter>submodules\ChaiScript\language</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\utility\fnv1a.hpp">
+      <Filter>submodules\ChaiScript\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\utility\json.hpp">
+      <Filter>submodules\ChaiScript\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\utility\json_wrap.hpp">
+      <Filter>submodules\ChaiScript\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\utility\static_string.hpp">
+      <Filter>submodules\ChaiScript\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\utility\utility.hpp">
+      <Filter>submodules\ChaiScript\utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="core\client.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{3692913f-7e44-4d82-8148-912d85bdae0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="submodules">
+      <UniqueIdentifier>{a532b433-0c62-4c49-8650-5d62d8502dd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="submodules\ChaiScript">
+      <UniqueIdentifier>{98d9bcfb-e126-4491-b106-64de79690d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="submodules\cpp-httplib">
+      <UniqueIdentifier>{89ae475f-414b-4622-abd8-5edca7ce5274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="submodules\ChaiScript\dispatchkit">
+      <UniqueIdentifier>{e57ebf27-32ae-4d67-b3b3-3a2c5a8d818b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="submodules\ChaiScript\language">
+      <UniqueIdentifier>{1887150a-7907-4d2c-be05-7ac4f752903d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="submodules\ChaiScript\utility">
+      <UniqueIdentifier>{463a1e46-74d3-4a81-8593-5a5e5c660b0d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

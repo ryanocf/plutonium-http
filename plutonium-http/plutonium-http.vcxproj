@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{74d8d476-2fe3-4da5-93df-69065b84a611}</ProjectGuid>
+    <RootNamespace>plutoniumhttp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;PLUTONIUMHTTP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PLUTONIUMHTTP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;PLUTONIUMHTTP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;PLUTONIUMHTTP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="core\client.hpp" />
+    <ClInclude Include="core\conversion.hpp" />
+    <ClInclude Include="include.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\chaiscript.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\chaiscript_basic.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\chaiscript_defines.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\chaiscript_stdlib.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\chaiscript_threading.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\any.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\bad_boxed_cast.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\bind_first.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\bootstrap.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\bootstrap_stl.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\boxed_cast.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\boxed_cast_helper.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\boxed_number.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\boxed_value.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\callable_traits.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\dispatchkit.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\dynamic_object.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\dynamic_object_detail.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\exception_specification.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\function_call.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\function_call_detail.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\handle_return.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\operators.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\proxy_constructors.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\proxy_functions.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\proxy_functions_detail.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\register_function.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\short_alloc.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\type_conversions.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\dispatchkit\type_info.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_algebraic.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_common.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_engine.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_eval.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_optimizer.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_parser.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_posix.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_prelude.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_prelude_docs.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_tracer.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_unknown.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\language\chaiscript_windows.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\utility\fnv1a.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\utility\json.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\utility\json_wrap.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\utility\static_string.hpp" />
+    <ClInclude Include="submodules\ChaiScript\include\chaiscript\utility\utility.hpp" />
+    <ClInclude Include="submodules\cpp-httplib\httplib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\client.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
